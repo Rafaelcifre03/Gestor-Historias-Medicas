@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Historias Medicas</title>
+    <style>
+    
+        .article-nav-inner {
+            background-color: #eee;
+            border-radius: 7px;
+            margin: 0 5%;
+            padding: 5px;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 20px;
+        }
+
+
+        .radio10 {
+            border-radius: 10px;
+        }
+
+        .bg-blue {
+            background-color: rgb(4, 31, 71);
+
+        }
+        .bg-gris {
+            background-color: rgb(220, 220, 220);
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        bg-c5 {
+            background-color: #1b1a1a;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        .min-h-100 {
+            min-height: 100vh;
+        }
+
+        .max-h-100 {
+            max-height: 100vh;
+        }
+
+        min-w-100px {
+            min-width: 100px;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .align-middle {
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body class="bg-blue">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark p-3">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./datos_medico.html">datos_medicos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./datos_personales.html">datos_personales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./historia_medica.html">historia_medica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home_user.html">Perfil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid container-md pe-sm-5 ps-sm-5">
+
+        <div class="row">
+
+            <div class="col-10 col-sm-4 col-md-3 col-lg-5 offset-1 justify-content-end d-sm-flex m-3 ">
+                <img src="./fotoperfil1.png" alt="" class="rounded-circle border" height="200px"
+                    width="200px">
+            </div>
+            <div class="col-10 col-sm-6 col-md-7 col-lg-5 offset-1 align-middle ps-sm-5 text-white m-3 ">
+                <h1 class="fs-1"><b>Dr Rafael Cifre Falcón</b></h1>
+                <p class="fs-4">Nº Identificacion: 23</p>
+            </div>
+
+        </div>
+
+
+        
+        <div class="row bg-blue radio10 border bg-white pe-3">
+            <!-- CONTENT -------------------------------------------->
+            <div class="col-12">
+
+                <h2 class="fs-1 m-3">Datos Personales</h2>
+
+                <div class="ms-sm-5 mb-5 p-2">
+
+                    <h3 class="mb-3 border-bottom">Datos Básicos</h3>
+
+                    <div class="d-flex mb-2 mt-2 flex-column flex-md-row">
+                        <p class="col-12 col-md-5 col-lg-2 align-middle m-0 ms-sm-3 ">Nombre: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="text" class="form-control" value="Rafael">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2 mt-2 flex-column flex-md-row">
+                        <p class="col-12 col-md-5 col-lg-2 align-middle m-0 ms-sm-3 ">Apellidos: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="text" class=" form-control" value="Cifre Falcón">
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-2 mt-2 flex-column flex-md-row">
+                        <p class="ms-sm-3 col-12 col-md-5 col-lg-2 align-middle m-0">Edad: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="text" class=" form-control" value="12">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2 mt-2 flex-column flex-md-row">
+                        <p class="ms-sm-3 col-12 col-md-5 col-lg-2 align-middle m-0">Sexo: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            M <input type="radio" class="" value="Rafael">
+                            F <input type="radio" class="" value="Rafael">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2 mt-2 flex-column flex-md-row">
+                        <p class="ms-sm-3 col-12 col-md-5 col-lg-2 align-middle m-0">Fecha Nacimiento:</p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="date" class=" form-control" value="03/11/2001">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2 mt-2 flex-column flex-md-row">
+                        <p class="ms-sm-3 col-12 col-md-5 col-lg-2 align-middle m-0">Direccion: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="text" class=" form-control" value="Calle 13">
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-2 mt-2 flex-column flex-md-row">
+                        <p class="ms-sm-3 col-12 col-md-5 col-lg-2 align-middle m-0">DNI: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="text" class=" form-control" value="99999999R">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2 mt-2 flex-column flex-md-row">
+                        <p class="ms-sm-3 col-12 col-md-5 col-lg-2 align-middle m-0">Estado Civil: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="text" class=" form-control" value="Casado(a)">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ms-sm-5 mb-5 p-3">
+                    <h3 class="mb-3 border-bottom">Empleo y formación</h3>
+                    <div class="d-flex mb-2 flex-column flex-md-row">
+                        <p class="ms-sm-3 col-12 col-md-5 col-lg-2 align-middle m-0">Empleo: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="text" class=" form-control" value="Camarero(a)">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2 flex-column flex-md-row">
+                        <p class="ms-sm-3 col-12 col-md-5 col-lg-2 align-middle m-0">Formacion: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="text" class=" form-control" value="Universitaria">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ms-sm-5 mb-5 p-3">
+                    <h3 class="mb-3 border-bottom">Lugares de Residencia</h3>
+                    <div class="d-flex mb-2 flex-column flex-md-row">
+                        <p class="ms-sm-3 col-12 col-md-5 col-lg-2 align-middle m-0">Pais Origen: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="text" class=" form-control" value="Cancún">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2 flex-column flex-md-row">
+                        <p class="ms-sm-3 col-12 col-md-5 col-lg-2 align-middle m-0">Pais residencia: </p>
+                        <div class="col-12 col-md-7 col-lg-10">
+                            <input type="text" class=" form-control" value="Panamá">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!----------------------------!!!!-->
+
+
+
+
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
